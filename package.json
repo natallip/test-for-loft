@@ -13,6 +13,10 @@
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js"
   },
+  "engines": {
+    "node": "8.9.4",
+    "npm": "5.6.0"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "vue": "^2.5.2",
