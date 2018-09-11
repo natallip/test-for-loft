@@ -1,0 +1,51 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+ul, li {
+  padding: 0px;
+  margin: 0px !important;
+  list-style-type: none;
+  display: flex;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: $text;
+  font-size: 14px;
+}
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  height: 100%;
+  @include laptop {
+    width: 668px;
+  }
+  @include tablets {
+    width: 260px;
+  }
+}
+.btn {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 15px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: $accent;
+  border-radius: 3px;
+  color: #fff;
+}
+.btn:hover {
+  background-color: $accent-light;
+}
